@@ -28,7 +28,8 @@ The following code style guidelines should be adhered to:
     - Opening braces for control structures should be placed on the same line
     - Closing braces should always be on a new line
     - Example:
-    ```cpp
+
+```cpp
 void FooBar()
 {
     if (foo)
@@ -44,4 +45,4 @@ void FooBar()
         //
     }
 }
-    ```
+```

@@ -99,6 +99,7 @@ namespace olc
 			olc::vf2d scale = { 1.0f, 1.0f };
 			float angle = 0.0f;
 			olc::Pixel tint = olc::WHITE;
+    		float data[4];
 			bool remove = false;
 		};
 		
@@ -163,13 +164,9 @@ namespace olc
 				int temp = (255 - ((particle.scale.x / 0.9f) * 254));
 
 				if(temp < 0)
-					particle.tint.a = 0;
+					particle.tint = olc::Pixel(0,0,0,0);
 				else
-					particle.tint.a = (uint8_t)temp;
-				
-				particle.tint.r = particle.tint.a;
-				particle.tint.g = particle.tint.a;
-				particle.tint.b = particle.tint.a;
+					particle.tint = olc::Pixel(temp, temp, temp, temp);
 
 				if(particle.tint.a == 0)
 					particle.remove = true;
@@ -212,14 +209,10 @@ namespace olc
 				int temp = (255 - ((particle.scale.x / 0.9f) * 254));
 
 				if(temp < 0)
-					particle.tint.a = 0;
+					particle.tint = olc::Pixel(0,0,0,0);
 				else
-					particle.tint.a = (uint8_t)temp;
+					particle.tint = olc::Pixel(temp, temp, temp, temp);
 				
-				particle.tint.r = particle.tint.a;
-				particle.tint.g = particle.tint.a;
-				particle.tint.b = particle.tint.a;
-
 				if(particle.tint.a == 0)
 					particle.remove = true;
 			}

@@ -108,12 +108,26 @@ Within the lambda functions ``p.lParticles`` is a ``std::list<sParticle>`` which
 ```cpp
 // particle structure
 struct sParticle {
-    olc::vf2d pos = { 0.0f, 0.0f };
+    
+    // position of this particle
+    olc::vf2d pos = { 0.0f, 0.0f }; 
+    
+    // velocity of this particle
     olc::vf2d vel = { 0.0f, 0.0f };
+    
+    // x and y scale of this particle
     olc::vf2d scale = { 1.0f, 1.0f };
+    
+    // the orientation of the particle
     float angle = 0.0f;
+    
+    // the tint of this particle, useful for coloring and fading effects
     olc::Pixel tint = olc::WHITE;
+    
+    // arbitrary data, for use when persistent data is required for your custom animation
     float data[4];
+    
+    // remove flag, set to true to remove this particle (e.g. it's animation should be considered finished)
     bool remove = false;
 };
 ```

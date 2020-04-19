@@ -101,7 +101,7 @@ bool OnUserCreate()
 
 ```
 
-Within the lambda functions use ``p.lParticles`` is a ``std::list<sParticle>`` which is used to create and move each of the particles spawned. The following is the default particle animations.
+Within the lambda functions ``p.lParticles`` is a ``std::list<sParticle>`` which is used to create and move each of the particles spawned. The following is the default particle animations.
 
 ### Particle Structure (for reference)
 

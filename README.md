@@ -2,6 +2,11 @@
 
 This extension is designed for use with the [olcPixelGameEngine](https://github.com/OneLoneCoder/olcPixelGameEngine) by [Javidx9](https://github.com/OneLoneCoder). It allows you to easily use animated particles that utilize animated sprites that utilise either single-file spritesheets or multiple image files for each frame.
 
+## See it in action!
+
+[![PGE 2 Asteroids](http://img.youtube.com/vi/n5Oo9DCuRE8/0.jpg)](http://www.youtube.com/watch?v=n5Oo9DCuRE8)
+
+
 ---
 
 ## Usage

@@ -19,6 +19,10 @@ public:
 		// use default particle sprite, create, and move functions
 		particle = new olc::Particles();
 		
+		// Using alternative animations
+		// particle->SetCreateFunction(olc::ParticleAnimations::StarBurstCreate);
+		// particle->SetMoveFunction(olc::ParticleAnimations::StarBurstMove);
+		
 		return true;
 	}
 	
